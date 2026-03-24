@@ -2,7 +2,7 @@
 
 | Install to app | Up to date | Build | Discord |
 |:--------------:|:----------:|:-----:|:-------:|
-| [![Install](https://img.shields.io/badge/Click%20here%20to%20install%20repo-gray?style=flat&labelColor=red)](https://intradeus.github.io/http-protocol-redirector/?r=tachiyomi://add-repo?url=https://raw.githubusercontent.com/yuzono/manga-repo/repo/index.min.json) | [![Updated](https://img.shields.io/github/actions/workflow/status/yuzono/tachiyomi-extensions/auto_cherry_pick.yml?label=Updated&labelColor=27303D)](https://github.com/yuzono/tachiyomi-extensions/actions/workflows/auto_cherry_pick.yml) | [![Build](https://github.com/yuzono/tachiyomi-extensions/actions/workflows/build_push.yml/badge.svg)](https://github.com/yuzono/tachiyomi-extensions/actions/workflows/build_push.yml) | [![Discord](https://img.shields.io/discord/1377136877491982366.svg?label=&labelColor=6A7EC2&color=7389D8&logo=discord&logoColor=FFFFFF)](https://discord.gg/85MZhUX688) |
+| [![Install](https://img.shields.io/badge/Click%20here%20to%20install%20repo-gray?style=flat&labelColor=red)](https://intradeus.github.io/http-protocol-redirector/?r=tachiyomi://add-repo?url=https://raw.githubusercontent.com/yuzono/cursed-manga-repo/repo/index.min.json) | [![Updated](https://img.shields.io/github/actions/workflow/status/yuzono/cursed-manga-extensions/auto_cherry_pick.yml?label=Updated&labelColor=27303D)](https://github.com/yuzono/cursed-manga-extensions/actions/workflows/auto_cherry_pick.yml) | [![Build](https://github.com/yuzono/cursed-manga-extensions/actions/workflows/build_push.yml/badge.svg)](https://github.com/yuzono/cursed-manga-extensions/actions/workflows/build_push.yml) | [![Discord](https://img.shields.io/discord/1377136877491982366.svg?label=&labelColor=6A7EC2&color=7389D8&logo=discord&logoColor=FFFFFF)](https://discord.gg/85MZhUX688) |
 
 [![Sponsor me on GitHub](https://custom-icon-badges.demolab.com/badge/-Sponsor-ea4aaa?style=for-the-badge&logo=heart&logoColor=white)](https://github.com/sponsors/cuong-tran "Sponsor me on GitHub")
 
@@ -31,12 +31,12 @@ Some extensions from this repo provide better support for Komikku's `Suggestions
 * Otherwise, copy & paste the following URL:
 
 ```html
-https://raw.githubusercontent.com/yuzono/manga-repo/repo/index.min.json
+https://raw.githubusercontent.com/yuzono/cursed-manga-repo/repo/index.min.json
 ```
 
 ## Requests
 
-To request a new source or bug fix, [create an issue](https://github.com/yuzono/tachiyomi-extensions/issues/new/choose).
+To request a new source or bug fix, [create an issue](https://github.com/yuzono/cursed-manga-extensions/issues/new/choose).
 
 Please note that creating an issue does not mean that the source will be added or fixed in a timely
 fashion, because the work is volunteer-based. Some sources may also be impossible to do or prohibitively
@@ -49,7 +49,7 @@ Issues are up-for-grabs for any developer if there is no assigned user already.
 
 Contributions are welcome!
 
-Check out the repo's [issue backlog](https://github.com/yuzono/tachiyomi-extensions/issues) for source requests and bug reports.
+Check out the repo's [issue backlog](https://github.com/yuzono/cursed-manga-extensions/issues) for source requests and bug reports.
 
 To get started with development, see [CONTRIBUTING.md](./CONTRIBUTING.md).
 

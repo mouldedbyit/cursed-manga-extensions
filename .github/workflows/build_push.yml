@@ -98,7 +98,7 @@ jobs:
 
       - name: Upload APKs (${{ matrix.chunk.number }})
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
-        if: github.repository == 'yuzono/tachiyomi-extensions'
+        if: github.repository == 'yuzono/cursed-manga-extensions'
         with:
           name: "individual-apks-${{ matrix.chunk.number }}"
           path: "**/*.apk"
@@ -110,7 +110,7 @@ jobs:
   publish:
     name: Publish extension repo
     needs: [prepare, build]
-    if: github.repository == 'yuzono/tachiyomi-extensions'
+    if: github.repository == 'yuzono/cursed-manga-extensions'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -144,7 +144,7 @@ jobs:
       - name: Checkout repo branch
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          repository: yuzono/tachiyomi-repo
+          repository: yuzono/cursed-manga-repo
           token: ${{ secrets.BOT_PAT }}
           ref: repo
           path: repo
@@ -162,23 +162,11 @@ jobs:
         with:
           message: "${{ needs.prepare.outputs.latestCommitMessage }}"
           cwd: "./repo"
-          # committer_name: github-actions[bot]
-          # committer_email: github-actions[bot]@users.noreply.github.com
-
-      - name: Sync repo
-        env:
-          COMMIT_MESSAGE: ${{ needs.prepare.outputs.latestCommitMessage }}
-        run: |
-          cd repo
-          git config user.name "Yūzōnō"
-          git config user.email "yuzono@users.noreply.github.com"
-          git remote set-url origin https://github.com/yuzono/manga-repo.git
-          git fetch origin
-          git reset origin/repo
-          git add -A
-          git commit --amend -m "$COMMIT_MESSAGE" --no-sign --allow-empty || echo "No changes to commit"
-          git push origin HEAD:repo --force
+          # author_name: github-actions[bot]
+          # author_email: github-actions[bot]@users.noreply.github.com
+          default_author: github_actions
+          commit: --signoff
 
       - name: Purge cached index on jsDelivr
         run: |
-          curl https://purge.jsdelivr.net/gh/yuzono/manga-repo@repo/index.min.json
+          curl https://purge.jsdelivr.net/gh/yuzono/cursed-manga-repo@repo/index.min.json

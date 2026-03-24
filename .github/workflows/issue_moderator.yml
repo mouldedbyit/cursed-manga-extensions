@@ -40,7 +40,7 @@ jobs:
           existing-check-enabled: true
           existing-check-labels: |
             ["Source request", "Domain changed"]
-          existing-check-repo-url: https://raw.githubusercontent.com/yuzono/manga-repo/repo/index.min.json
+          existing-check-repo-url: https://raw.githubusercontent.com/yuzono/cursed-manga-repo/repo/index.min.json
 
           auto-close-rules: |
             [

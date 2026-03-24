@@ -71,7 +71,7 @@ jobs:
 
       - name: Upload APKs (${{ matrix.chunk.number }})
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
-        if: "github.repository == 'yuzono/tachiyomi-extensions'"
+        if: "github.repository == 'yuzono/cursed-manga-extensions'"
         with:
           name: "individual-apks-${{ matrix.chunk.number }}"
           path: "**/*.apk"
@@ -80,7 +80,7 @@ jobs:
   inspect:
     name: Inspect extensions
     needs: [prepare, build]
-    if: "github.repository == 'yuzono/tachiyomi-extensions'"
+    if: "github.repository == 'yuzono/cursed-manga-extensions'"
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
