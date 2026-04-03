@@ -1,3 +1,9 @@
+
+
+You're looking for:
+https://raw.githubusercontent.com/mouldedbyit/cursed-manga-extensions/repo/index.min.json
+
+
 <div align="center">
 
 | Install to app | Up to date | Build | Discord |
